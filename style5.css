@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Sans&family=Roboto+Serif:wght@400;500&family=Source+Sans+Pro&display=swap');
+:root {
+  --yellow: #ffce33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Acme', sans-serif;
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background-color: white;
+  width: 310px;
+  /* height: 100%; */
+}
+
+.header {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 40px 15px;
+}
+
+.search-bar {
+  background-color: whitesmoke;
+  box-shadow: 1px 5px 5px rgba(128, 128, 128, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  width: 90%;
+  padding: 12px;
+  padding-left: 40px;
+  margin-left: 16px;
+  margin-top: -15px;
+  color: rgb(211, 211, 211);
+}
+
+.today-title,
+.top-title,
+.popular-title {
+  /* border: 2px solid red; */
+  padding: 10px;
+  font-size: 20px;
+}
+
+.today-book,
+.author {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.today-book__img,
+.author__pic {
+  width: 90px;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.today-book__content,
+.author__content {
+  margin-left: 20px;
+  /* border: 2px solid green; */
+  width: 90%;
+}
+
+.today-book__content__text {
+  /* border: 2px solid green; */
+  font-size: 10px;
+  color: gray;
+  padding: 10px 0;
+}
+
+.today-book__content__stars {
+  /* border: 2px solid red; */
+  font-size: 10px;
+  color: rgb(221, 189, 45);
+  padding: 10px 0;
+}
+
+.today-book__content__btn {
+  /* border: 2px solid blue; */
+  display: flex;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+#Biography,
+#Journey {
+  background-color: wheat;
+  padding: 3px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.today-book__content__mark {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 35px;
+  padding: 5px 0;
+}
+
+.today-book__content__mark__bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+#book-now {
+  margin-left: 20px;
+  background-color: gainsboro;
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.top-books__list {
+  /* border: 2px solid salmon; */
+  height: 120px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+.top-books__list__book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid purple; */
+  padding: 5px 10px;
+}
+.top-books__list__book__pic {
+  height: 80%;
+  width: 90%;
+  /* border: 2px solid green; */
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.top-books__list__book__stars {
+  font-size: 5px;
+  color: rgb(221, 189, 45);
+}
+
+.author {
+  padding-bottom: 10px;
+}
+
+.author__content__text {
+  font-size: 13px;
+  color: gray;
+  margin-top: 10px;
+}
